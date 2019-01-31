@@ -1,0 +1,78 @@
+== Info:   Trying 52.73.94.166...
+== Info: TCP_NODELAY set
+== Info: Connected to httpbin.org (52.73.94.166) port 443 (#0)
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 1/3)
+== Info: schannel: checking server certificate revocation
+== Info: schannel: sending initial handshake data: sending 176 bytes...
+== Info: schannel: sent initial handshake data: sent 176 bytes
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: failed to receive handshake, need more data
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 1360
+== Info: schannel: encrypted data buffer: offset 1360 length 4096
+== Info: schannel: encrypted data length: 1268
+== Info: schannel: encrypted data buffer: offset 1268 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 1650
+== Info: schannel: encrypted data buffer: offset 2918 length 4096
+== Info: schannel: sending next handshake data: sending 126 bytes...
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 2/3)
+== Info: schannel: encrypted data got 51
+== Info: schannel: encrypted data buffer: offset 51 length 4096
+== Info: schannel: SSL/TLS handshake complete
+== Info: schannel: SSL/TLS connection with httpbin.org port 443 (step 3/3)
+== Info: schannel: stored credential handle in session cache
+=> Send header, 149 bytes (0x95)
+0000: POST /post HTTP/1.1
+0015: Host: httpbin.org
+0028: User-Agent: curl/7.55.1
+0041: Accept: */*
+004e: Content-Length: 34
+0062: Content-Type: application/x-www-form-urlencoded
+0093: 
+=> Send data, 34 bytes (0x22)
+0000: firstname = boolean&lastname=world
+== Info: upload completely sent off: 34 out of 34 bytes
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encdata_buffer resized 103424
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: encrypted data got 699
+== Info: schannel: encrypted data buffer: offset 699 length 103424
+== Info: schannel: decrypted data length: 670
+== Info: schannel: decrypted data added: 670
+== Info: schannel: decrypted data cached: offset 670 length 102400
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: decrypted data buffer: offset 670 length 102400
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 670
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 25 bytes (0x19)
+0000: Server: gunicorn/19.9.0
+<= Recv header, 37 bytes (0x25)
+0000: Date: Thu, 31 Jan 2019 09:45:34 GMT
+<= Recv header, 32 bytes (0x20)
+0000: Content-Type: application/json
+<= Recv header, 21 bytes (0x15)
+0000: Content-Length: 424
+<= Recv header, 32 bytes (0x20)
+0000: Access-Control-Allow-Origin: *
+<= Recv header, 40 bytes (0x28)
+0000: Access-Control-Allow-Credentials: true
+<= Recv header, 16 bytes (0x10)
+0000: Via: 1.1 vegur
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 424 bytes (0x1a8)
+0000: {.  "args": {}, .  "data": "", .  "files": {}, .  "form": {.    
+0040: "firstname ": " boolean", .    "lastname": "world".  }, .  "head
+0080: ers": {.    "Accept": "*/*", .    "Connection": "close", .    "C
+00c0: ontent-Length": "34", .    "Content-Type": "application/x-www-fo
+0100: rm-urlencoded", .    "Host": "httpbin.org", .    "User-Agent": "
+0140: curl/7.55.1".  }, .  "json": null, .  "origin": "37.110.210.88",
+0180:  .  "url": "https://httpbin.org/post".}.
+== Info: Connection #0 to host httpbin.org left intact

@@ -1,0 +1,86 @@
+== Info:   Trying 104.24.96.167...
+== Info: TCP_NODELAY set
+== Info: Connected to www.booleanworld.com (104.24.96.167) port 443 (#0)
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 1/3)
+== Info: schannel: checking server certificate revocation
+== Info: schannel: sending initial handshake data: sending 185 bytes...
+== Info: schannel: sent initial handshake data: sent 185 bytes
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 2/3)
+== Info: schannel: failed to receive handshake, need more data
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 2/3)
+== Info: schannel: encrypted data got 1360
+== Info: schannel: encrypted data buffer: offset 1360 length 4096
+== Info: schannel: encrypted data length: 1288
+== Info: schannel: encrypted data buffer: offset 1288 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 2/3)
+== Info: schannel: encrypted data got 2808
+== Info: schannel: encrypted data buffer: offset 4096 length 4096
+== Info: schannel: received incomplete message, need more data
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 2/3)
+== Info: schannel: encrypted data got 923
+== Info: schannel: encrypted data buffer: offset 5019 length 5120
+== Info: schannel: sending next handshake data: sending 93 bytes...
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 2/3)
+== Info: schannel: encrypted data got 258
+== Info: schannel: encrypted data buffer: offset 258 length 5120
+== Info: schannel: SSL/TLS handshake complete
+== Info: schannel: SSL/TLS connection with www.booleanworld.com port 443 (step 3/3)
+== Info: schannel: stored credential handle in session cache
+=> Send header, 85 bytes (0x55)
+0000: HEAD / HTTP/1.1
+0011: Host: www.booleanworld.com
+002d: User-Agent: curl/7.55.1
+0046: Accept: */*
+0053: 
+== Info: schannel: client wants to read 102400 bytes
+== Info: schannel: encdata_buffer resized 103424
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: encrypted data got 749
+== Info: schannel: encrypted data buffer: offset 749 length 103424
+== Info: schannel: decrypted data length: 720
+== Info: schannel: decrypted data added: 720
+== Info: schannel: decrypted data cached: offset 720 length 102400
+== Info: schannel: encrypted data buffer: offset 0 length 103424
+== Info: schannel: decrypted data buffer: offset 720 length 102400
+== Info: schannel: schannel_recv cleanup
+== Info: schannel: decrypted data returned 720
+== Info: schannel: decrypted data buffer: offset 0 length 102400
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 37 bytes (0x25)
+0000: Date: Thu, 31 Jan 2019 10:09:04 GMT
+<= Recv header, 40 bytes (0x28)
+0000: Content-Type: text/html; charset=UTF-8
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 155 bytes (0x9b)
+0000: Set-Cookie: __cfduid=dac5d46fff54116dedaaa21a550cb40d31548929343
+0040: ; expires=Fri, 31-Jan-20 10:09:03 GMT; path=/; domain=.booleanwo
+0080: rld.com; HttpOnly; Secure
+<= Recv header, 23 bytes (0x17)
+0000: Vary: Accept-Encoding
+<= Recv header, 31 bytes (0x1f)
+0000: Vary: Accept-Encoding, Cookie
+<= Recv header, 73 bytes (0x49)
+0000: Link: <https://www.booleanworld.com/wp-json/>; rel="https://api.
+0040: w.org/"
+<= Recv header, 29 bytes (0x1d)
+0000: X-Frame-Options: sameorigin
+<= Recv header, 33 bytes (0x21)
+0000: X-XSS-Protection: 1; mode=block
+<= Recv header, 73 bytes (0x49)
+0000: Strict-Transport-Security: max-age=15552000; includeSubDomains; 
+0040: preload
+<= Recv header, 33 bytes (0x21)
+0000: X-Content-Type-Options: nosniff
+<= Recv header, 100 bytes (0x64)
+0000: Expect-CT: max-age=604800, report-uri="https://report-uri.cloudf
+0040: lare.com/cdn-cgi/beacon/expect-ct"
+<= Recv header, 20 bytes (0x14)
+0000: Server: cloudflare
+<= Recv header, 30 bytes (0x1e)
+0000: CF-RAY: 4a1b616f6ad49aac-FRA
+<= Recv header, 2 bytes (0x2)
+0000: 
+== Info: Connection #0 to host www.booleanworld.com left intact

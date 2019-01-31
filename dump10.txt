@@ -1,0 +1,5 @@
+== Info:   Trying 52.73.94.166...
+== Info: TCP_NODELAY set
+== Info: Connected to httpbin.org (52.73.94.166) port 80 (#0)
+== Info: couldn't open file "test.c"
+== Info: Closing connection 0

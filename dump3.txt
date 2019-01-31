@@ -1,0 +1,33 @@
+== Info: Rebuilt URL to: gazeta.uz/
+== Info:   Trying 94.130.57.204...
+== Info: TCP_NODELAY set
+== Info: Connected to gazeta.uz (94.130.57.204) port 80 (#0)
+=> Send header, 76 bytes (0x4c)
+0000: GET / HTTP/1.1
+0010: Host:www.afisha.uz
+0024: Accept: */*
+0031: User-Agent: Mozilla/5.0
+004a: 
+<= Recv header, 24 bytes (0x18)
+0000: HTTP/1.1 403 Forbidden
+<= Recv header, 15 bytes (0xf)
+0000: Server: nginx
+<= Recv header, 37 bytes (0x25)
+0000: Date: Thu, 31 Jan 2019 09:33:17 GMT
+<= Recv header, 25 bytes (0x19)
+0000: Content-Type: text/html
+<= Recv header, 21 bytes (0x15)
+0000: Content-Length: 162
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 162 bytes (0xa2)
+0000: <html>
+0008: <head><title>403 Forbidden</title></head>
+0033: <body bgcolor="white">
+004b: <center><h1>403 Forbidden</h1></center>
+0074: <hr><center>nginx</center>
+0090: </body>
+0099: </html>
+== Info: Connection #0 to host gazeta.uz left intact
